@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Dapp</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/ophir-logo.jpg" alt="">
+            <button id="connect-wallet">Connect Wallet</button>
+        </nav>
+    </header>
+    <main>
+        <!-- dapp details  -->
+        <div class="dapp-details">
+            <div class="text-area">
+                <h1> VoteBlock: Empowering Members to Shape the Future of Resource Allocation</h1>
+                <p>
+                    A voting Dapp will enable us to streamline and democratize our
+                    decision-making processes, ensuring that every member can actively
+                    participate and contribute to our organization's direction.
+                </p>
+                <p>
+                    At Ophir, we believe in the power of collective decision-making.
+                    That's why we're excited to announce the launch of VoteBlock, our
+                    innovative decentralized application (dapp) designed to
+                    revolutionize how we allocate event resources. With VoteBlock, every
+                    member of our community has a voice in determining the direction of
+                    our organization.
+                </p>
+                <p>
+                    Our voting dapp allows members to participate in important decisions
+                    regarding the allocation of event resources. We understand the
+                    significance of grants, donations, and investment funds in driving
+                    our organization forward. Through VoteBlock, members can cast their
+                    votes on two crucial proposals: Research Projects and Operational
+                    Expenses.
+                </p>
+            </div>
+            <img src="images/details-img.png" alt="">
+        </div>
+
+        <!-- the voting form  -->
+        <div class="voting-form">
+            <h2>The voting form</h2>
+            <div class="proposals">
+                <div class="project-research">
+                    <h3>Project Research</h3>
+                    <p>
+                        With Projects Research, we aim to foster innovation and explore new
+                        frontiers. Members can vote on proposals that focus on
+                        groundbreaking research initiatives, seeking to push the boundaries
+                        of knowledge in our industry. By supporting Research Projects, we
+                        invest in the future and nurture a culture of discovery within our
+                        organization.
+                    </p>
+                </div>
+                <div class="operational-resources">
+                    <h3>Operational Resources</h3>
+                    <p>
+                        Operational Expenses play a critical role in the day-to-day
+                        functioning of our organization. Voting on Operational Expenses
+                        proposals enables members to make decisions regarding the allocation
+                        of resources for essential activities such as infrastructure,
+                        staffing, and logistical needs. These decisions directly impact our
+                        operational efficiency and sustainability.
+                    </p>
+                </div>
+                <div class="building-project">
+                    <h3>Building Project</h3>
+                    <p>
+                        We are thrilled to present a building project proposal that aligns perfectly 
+                        with your organization's vision. Our proposal aims to create an innovative 
+                        and sustainable [building type] that will serve [purpose]. With a dedicated 
+                        team of experts, we will deliver exceptional design, construction, and amenities,
+                         ensuring a remarkable outcome. Our cost-effective approach and realistic timeline
+                         further enhance the feasibility of this project. We look forward to discussing 
+                         the proposal in more detail and addressing any questions or concerns you may have.
+                    </p>
+                </div>
+                <div class="road-construction">
+                    <h3>Road construction</h3>
+                    <p>
+                        Our proposal entails the construction of a [type of road] to enhance transportation
+                        infrastructure and connectivity. With an experienced team and modern construction 
+                        techniques, we guarantee high-quality results. The project timeline is designed 
+                        for efficiency and minimal disruptions. This proposal addresses the community's 
+                        transportation needs, fostering development. We are eager to discuss the details 
+                        and address any inquiries you may have.
+                    </p>
+                </div>
+                <div class="school-renovation">
+                    <h3>School Renovationi</h3>
+                    <p>
+                        We are pleased to present a proposal for the renovation of Schools. 
+                        Our objective is to enhance the learning environment and provide 
+                        modern facilities for students and staff. Our skilled team will 
+                        undertake necessary repairs, upgrade infrastructure, and improve 
+                        safety measures. The project timeline ensures minimal disruption 
+                        to school activities. This proposal reflects our commitment to 
+                        creating an optimal educational space and fostering student success. 
+                        We look forward to discussing the proposal further and addressing any 
+                        questions or concerns.
+                    </p>
+                </div>
+                <div class="sanitization">
+                    <h3>Sanitization</h3>
+                    <p>
+                        Our sanitization proposal offers comprehensive cleaning and disinfection 
+                        services for your facility. We use industry-leading products and protocols 
+                        to ensure a safe and germ-free environment. Our experienced team will 
+                        customize a sanitization plan to target high-touch areas and shared spaces. 
+                        With flexible scheduling and competitive pricing, our proposal provides a 
+                        cost-effective solution. We prioritize the well-being of your staff and visitors, 
+                        and we are eager to discuss the details further.
+                    </p>
+                </div>
+            </div>
+
+            <div class="voting-section">
+                <div class="vote-project-research">
+                    <input type="checkbox" class="input" id="project-research">
+                    <label for="project-research">Project Research</label>
+                </div>
+                <div class="vote-operational-resources">
+                    <input type="checkbox" class="input" id="operational-resources">
+                    <label for="operational-resources">Operational Resources</label>
+                </div>
+                <div class="vote-building-project">
+                    <input type="checkbox" class="input" id="building-project">
+                    <label for="building-project">Building Project</label>
+                </div>
+                <div class="vote-road-construction">
+                    <input type="checkbox" class="input" id="road-construction">
+                    <label for="road-construction">Road Construction</label>
+                </div>
+                <div class="vote-school-renovation">
+                    <input type="checkbox" class="input" id="school-renovation">
+                    <label for="school-renovation">School Renovation</label>
+                </div>
+                <div class="vote-sanitization">
+                    <input type="checkbox" class="input" id="sanitization">
+                    <label for="sanitization">Sanitization</label>
+                </div>
+                <button id="vote-now">Vote Now</button>
+            </div>
+        </div>
+
+        <!-- checking result  -->
+        <div class="checking-result">
+            <button id="check-resutl">Check Election Result</button>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Ophire Institute. All right reserved</p>
+        <p>coded by <a href="https://kemichris.online/" target="_blank" rel="noopener noreferrer">Kemi Chris</a></p>
+    </footer>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
