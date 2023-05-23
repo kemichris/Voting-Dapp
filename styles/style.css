@@ -150,3 +150,11 @@ footer p a {
 footer p a:hover {
     color: rgb(153, 146, 146);
 }
+
+/* media responsiveness  */
+@media (max-width:1115px) {
+    .dapp-details {
+        margin: 0 5rem;
+    }
+    
+}

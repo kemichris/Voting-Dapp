@@ -214,7 +214,7 @@ voteNow.addEventListener("click", ()=>{
 })
 
 // winning proposal 
-checkResult.addEventListener("click", resultCheck);
+checkResult.addEventListener("click", resultCheckName);
 
 
 
@@ -298,10 +298,29 @@ async function resultCheck() {
       });
   } else {
     console.error('MetaMask is not installed');
-  }
-  
+  }  
 
 }
+
+async function resultCheckName() {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    // Create an instance of the contract
+    const contract = new ethers.Contract(contractAddress, contractABI, provider.getSigner());
+
+    // Call the winningProposal function
+    const winningProposalIndex = await contract.winningProposal();
+  
+    // Call the name property on the proposals array using the winning proposal index
+    const winningProposal = await contract.proposals(winningProposalIndex);
+  
+    // Convert the hex-encoded name to a human-readable format
+    const winningName = ethers.utils.parseBytes32String(winningProposal.name);
+  
+    // Show the winning name in an alert
+    alert('Winning Name: ' + winningName);
+
+  }
+  
 
 
 
